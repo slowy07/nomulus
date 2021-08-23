@@ -87,7 +87,7 @@ public final class GpgSystemCommandExtension implements BeforeEachCallback, Afte
     checkState(Objects.equals(cwd, DEV_NULL));
     String tmpRootDirString = System.getenv("TMPDIR");
     // Create the working directory for the forked process on Temp file system. Create under the
-    // path specified by 'TMPDIR' envrionment variable if defined, otherwise create under the
+    // path specified by 'TMPDIR' environment variable if defined, otherwise create under the
     // runtime's default (typically /tmp).
     cwd =
         isNullOrEmpty(tmpRootDirString)

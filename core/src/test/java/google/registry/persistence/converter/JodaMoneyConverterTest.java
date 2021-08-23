@@ -50,13 +50,13 @@ import org.junit.jupiter.api.extension.RegisterExtension;
  * amount and the currency separately, so that it is easily queryable. This requires that we make
  * {@link Money} a nested embeddable object.
  *
- * <p>However becaues {@link Money} is not a class that we control, we cannot use annotation-based
+ * <p>However because {@link Money} is not a class that we control, we cannot use annotation-based
  * mapping. Therefore there is no {@code JodaMoneyConverter} class. Instead, we define the mapping
  * in {@code META-INF/orm.xml}.
  *
  * <p>Also note that any entity that contains a {@link Money} should should implement a
  * {@link @PostLoad} callback that converts the amount in the {@link Money} to a scale that is
- * appropriate for the currency. This is espcially necessary for currencies like JPY where the scale
+ * appropriate for the currency. This is especially necessary for currencies like JPY where the scale
  * is 0, which is different from the default scale that {@link BigDecimal} is persisted in database.
  */
 public class JodaMoneyConverterTest {

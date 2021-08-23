@@ -23,7 +23,7 @@ public interface WhoisCommand {
    * Executes a WHOIS query and returns the resultant data.
    *
    * @return An object representing the response to the WHOIS command.
-   * @throws WhoisException If some error occured while executing the command.
+   * @throws WhoisException If some error occurred while executing the command.
    */
   WhoisResponse executeQuery(DateTime now) throws WhoisException;
 }

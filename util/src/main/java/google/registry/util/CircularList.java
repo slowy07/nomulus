@@ -68,7 +68,7 @@ public class CircularList<T> {
    *
    * @param <T> - Matching element type of iterator
    *     <p>Supports adding in element at a time, adding an {@link Iterable} of elements, and adding
-   *     an variable number of elemetns.
+   *     an variable number of elements.
    *     <p>Sets first element added to {@code first}, and when built, points last element to the
    *     {@code first} element.
    */
